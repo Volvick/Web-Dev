@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 * {
+   font-family: inter;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,8 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: inter
-  ;
+
 }
 .card{
   background-color: #fff;
