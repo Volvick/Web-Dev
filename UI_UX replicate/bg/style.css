@@ -1,0 +1,48 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #1A1A2E, #253A80); /* your color choice */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Blurred circle base */
+.blur-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Customize each */
+.one {
+  width: 300px;
+  height: 300px;
+  background: #00CFC1;
+  top: 10%;
+  left: 20%;
+}
+
+.two {
+  width: 250px;
+  height: 250px;
+  background: #FFB300;
+  bottom: 15%;
+  right: 25%;
+}
+
+.three {
+  width: 200px;
+  height: 200px;
+  background: #7B7F9E;
+  top: 50%;
+  right: 10%;
+}
