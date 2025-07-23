@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a5a5a5;
+  width: 100%;
+  background-size: cover;
+  height: 100vh;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: #fff;
+  padding:  25px 20px;
+  border-radius: 10px;
+  width:350px;
+  margin: 0 20px;
+  box-shadow: 0 0 20px #00000060;
+  border: 1px solid #0000003d;
+}
+.card .img>img{
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+.textContent .header{
+  margin: 12px 0;
+}
+.textContent .para{
+  color: rgba(49, 49, 49, 0.671);
+  font-weight: 400;
+  background-color: #e7e7e718;
+  border-radius: 8px;
+  padding: 0px 8px;
+  font-size: 13px;
+}
+.btn{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+}
+.btn>button{
+  background: none;
+  outline: none;
+  border: none;
+  color: #853636;
+}

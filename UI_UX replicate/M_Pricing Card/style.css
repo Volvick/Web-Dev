@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+body {
+  background-color: #EFEFEF;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root{
+  --colorgrey:#646464;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  background: #ffffff;
+  border: 1px solid #E7E7E7;
+  width:  350px;
+  padding: 10px;
+  border-radius: 18px;
+  padding-bottom: 20px;
+  flex-flow:column ;
+}
+.innerCard{
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #E7E7E7;
+  background: #EFEFEF;
+}
+.fa-rocket{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: var(--colorgrey);
+}
+.innerCard>h1{
+  color: var(--colorgrey);
+  margin: 10px 0;
+  font-weight: 600;
+}
+.innerCard>p{
+  color: #A1A1A1;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.price{
+  margin-top: 30px !important;
+}
+.price>span{
+  color: #A1A1A1;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: -10px;
+}
+button{
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding: 12px 0px;
+  width: 100%;
+  border-radius: 8px;
+  color: #868485;
+  font-weight: 600;
+  font-size:17px;
+  margin-top: 12px;
+}
+.Features{
+  color: #696969;
+  font-weight: 600;
+  margin:20px 0 0 14px  ;
+}
+.feat{
+  margin:12px 0 0 24px  ;
+}
+.feat>p{
+  margin-bottom: 4px;
+  color: var(--colorgrey);
+}
+.feat>p>i{
+  margin-right: 6px;
+  font-size: 14px;
+  color: var(--colorgrey);
+}
