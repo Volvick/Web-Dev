@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Fonts Showcase</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Best Fonts</h1>
+  <label for="base-color-input">Background:
+    <input type="color" id="base-color-input" oninput="setColor(this)">
+  </label>
+  <div class="grid-container">
+    <div class="card">
+      <h2>Inter</h2>
+      <p>
+        Everyone has the right to freedom of thought, conscience and religion;
+        this right includes freedom to change their religion or belief, and to
+        manifest it in teaching, practice, worship, and observance.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Geist</h2>
+      <p>
+        Freedom of opinion and expression includes the right to hold opinions
+        without interference and to seek, receive and impart information.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Poppins</h2>
+      <p>
+        Everyone has the right to rest and leisure, including reasonable
+        limitation of working hours and periodic holidays with pay.
+      </p>
+    </div>
+    <div class="card">
+      <h2>DM Sans</h2>
+      <p>
+        Education shall be directed to the full development of the human
+        personality and the strengthening of respect for human rights.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Roboto</h2>
+      <p>
+        Everyone has the right to freely participate in the cultural life of the
+        community, to enjoy the arts and to share in scientific advancement.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Urbanist</h2>
+      <p>
+        No one shall be subjected to arbitrary interference with privacy, family,
+        home or correspondence, nor to attacks upon their honour and reputation.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Lato</h2>
+      <p>
+        Everyone has duties to the community in which alone the free and full
+        development of personality is possible.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Montserrat</h2>
+      <p>
+        All are equal before the law and are entitled without any discrimination
+        to equal protection of the law.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Manrope</h2>
+      <p>
+        Everyone has the right to a nationality. No one shall be arbitrarily
+        deprived of their nationality nor denied the right to change it.
+      </p>
+    </div>
+    <div class="card">
+      <h2>IBM Plex Sans</h2>
+      <p>
+        Marriage shall be entered into only with the free and full consent of the
+        intending spouses.
+      </p>
+    </div>
+  </div>
+  <script>
+    function setColor(input){
+      document.body.setAttribute('style', `--base: ${input.value}`)
+    }
+  </script>
+</body>
+</html>

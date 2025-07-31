@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volvick Brand Color Palette</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #253A80;
+      --accent: #00CFC1;
+      --dark-bg: #1A1A2E;
+      --light-bg: #F8F8F8;
+      --text-dark: #1E1E1E;
+      --text-light: #F8F8F8;
+      --neutral: #7B7F9E;
+      --highlight: #FFB300;
+
+      --font-main: 'Inter', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-main);
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      transition: all 0.3s ease;
+    }
+
+    body.dark {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent);
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .swatch {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .swatch:hover {
+      transform: translateY(-4px);
+    }
+
+    .color-block {
+      height: 120px;
+    }
+
+    .info {
+      padding: 1rem;
+      background-color: rgba(255,255,255,0.85);
+      backdrop-filter: blur(4px);
+    }
+
+    .dark .info {
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .info h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .info p {
+      margin: 0.4rem 0 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle" onclick="toggleTheme()">Toggle Mode</button>
+  <div class="container">
+    <h1>🎨 Volvick Brand Color Palette</h1>
+    <p>Futuristic, bold, and clean colors representing the dual identity of a visionary indie founder and coder.</p>
+
+    <div class="grid">
+      <!-- Primary -->
+      <div class="swatch">
+        <div class="color-block" style="background-color: var(--primary);"></div>
+        <div class="info">
+          <h2>Primary - #253A80</h2>
+          <p>Core Identity · Authority · Ambition · Trust</p>
+        </div>
+      </div>
+
+      <!-- Accent -->
+      <div class="swatch">
+        <div class="color-block" style="background-color: var(--accent);"></div>
+        <div class="info">
+          <h2>Accent - #00CFC1</h2>
+          <p>CTA · Energy · Innovation · Momentum</p>
+        </div>
+      </div>
+
+      <!-- Highlight -->
+      <div class="swatch">
+        <div class="color-block" style="background-color: var(--highlight);"></div>
+        <div class="info">
+          <h2>Secondary Highlight - #FFB300</h2>
+          <p>Emotion · Optimism · Attention</p>
+        </div>
+      </div>
+
+      <!-- Neutral -->
+      <div class="swatch">
+        <div class="color-block" style="background-color: var(--neutral);"></div>
+        <div class="info">
+          <h2>Neutral - #7B7F9E</h2>
+          <p>Support · Elegance · UI Balance</p>
+        </div>
+      </div>
+
+      <!-- Light BG -->
+      <div class="swatch">
+        <div class="color-block" style="background-color: var(--light-bg); border: 1px solid #ccc;"></div>
+        <div class="info">
+          <h2>Light Background - #F8F8F8</h2>
+          <p>Clarity · Minimalism · Document UI</p>
+        </div>
+      </div>
+
+      <!-- Dark BG -->
+      <div class="swatch">
+        <div class="color-block" style="background-color: var(--dark-bg);"></div>
+        <div class="info">
+          <h2>Dark Background - #1A1A2E</h2>
+          <p>Premium · Focus · Hero Sections</p>
+        </div>
+      </div>
+
+      <!-- Text Dark -->
+      <div class="swatch">
+        <div class="color-block" style="background-color: var(--text-dark);"></div>
+        <div class="info">
+          <h2>Text (Dark) - #1E1E1E</h2>
+          <p>Readable · Strong · Serious</p>
+        </div>
+      </div>
+
+      <!-- Text Light -->
+      <div class="swatch">
+        <div class="color-block" style="background-color: var(--text-light); border: 1px solid #ccc;"></div>
+        <div class="info">
+          <h2>Text (Light) - #F8F8F8</h2>
+          <p>Clean · Accessible · Contrast</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>

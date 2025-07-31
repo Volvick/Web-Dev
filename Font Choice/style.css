@@ -1,0 +1,108 @@
+/* 🔧 Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 7%;
+  --base:#a80000;
+  --surfacecolor:oklch(from var(--base) calc(l * 1.2) c h );
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  background: var(--base);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  padding: 2em;
+  background-color: var(--surfacecolor);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 400;
+  transition:  scale .2s;
+}
+.card:hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+
+.card h2 {
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #b0b3c0;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* 🎨 Font Assignments */
+.card:nth-child(1) {
+  font-family: "Inter", sans-serif;
+}
+.card:nth-child(2) {
+  font-family: "Geist", sans-serif;
+}
+.card:nth-child(3) {
+  font-family: "Poppins", sans-serif;
+}
+.card:nth-child(4) {
+  font-family: "DM Sans", sans-serif;
+}
+.card:nth-child(5) {
+  font-family: "Roboto", sans-serif;
+}
+.card:nth-child(6) {
+  font-family: "Urbanist", sans-serif;
+}
+.card:nth-child(7) {
+  font-family: "Lato", sans-serif;
+}
+.card:nth-child(8) {
+  font-family: "Montserrat", sans-serif;
+}
+.card:nth-child(9) {
+  font-family: "Manrope", sans-serif;
+}
+.card:nth-child(10) {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+label{
+  top: 8rem;
+  background: var(--surfacecolor);
+  padding: .7em 1em;
+  border-radius: .5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  right: 10rem;
+  position: absolute;
+}
+input{
+  width: 2em;
+  height: 2em;
+  background: none;
+  border: none;
+}
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
