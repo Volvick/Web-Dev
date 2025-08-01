@@ -1,0 +1,270 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+:root {
+  --brand-primary: #1e1f21;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+:root {
+  /* Light Theme Neutrals */
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+}
+
+:root {
+  /* Typography Scale */
+  --font-primary: "Euclid Circular A", sans-serif;
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 4.5rem; /* 72px */
+  --text-8xl: 6rem; /* 96px */
+  --text-9xl: 8rem; /* 128px */
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+}
+
+:root {
+  /* Elevation Shadows */
+  --shadow-xs: 0 1px 2px rgba(11, 20, 38, 0.05);
+  --shadow-sm: 0 1px 3px rgba(11, 20, 38, 0.1), 0 1px 2px rgba(11, 20, 38, 0.06);
+  --shadow-md: 0 4px 6px rgba(11, 20, 38, 0.07),
+    0 2px 4px rgba(11, 20, 38, 0.06);
+  --shadow-lg: 0 10px 15px rgba(11, 20, 38, 0.1),
+    0 4px 6px rgba(11, 20, 38, 0.05);
+  --shadow-xl: 0 20px 25px rgba(11, 20, 38, 0.1),
+    0 10px 10px rgba(11, 20, 38, 0.04);
+  --shadow-2xl: 0 25px 50px rgba(11, 20, 38, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+body {
+  height: 100vh;
+}
+h1 {
+  font-size: var(--text-4xl);
+  line-height: var(--leading-normal);
+  font-family: var(--font-primary);
+}
+/* header */
+header {
+  font-family: var(--font-primary);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  height: 104px;
+  margin-bottom: 4rem;
+}
+.logo {
+  padding: 1.4rem 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+.logo img {
+  width: 6rem;
+  height: auto;
+  background: #f2f2f2;
+  padding: 1.5rem;
+  border-radius: 2.1rem;
+  transition: all 0.4s;
+  transform: rotate(45deg);
+}
+.logo img:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1.01);
+}
+.header-text h1 {
+  font-size: var(--text-4xl);
+  color: #0057ff;
+  line-height: var(--leading-normal);
+}
+.header-text p {
+  color: #666666;
+  font-size: var(--text-2xl);
+}
+/* template */
+.section-box {
+  display: flex;
+  flex-flow: column;
+  padding: 0 7%;
+  /* margin-bottom: 10rem; */
+  padding-bottom: 4%;
+}
+.section-box .title {
+  font-size: var(--text-7xl);
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+  font-weight: 600;
+
+  font-size: 2.9rem;
+}
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: stretch;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 400px;
+  min-width: 300px;
+  max-width: 500px;
+
+}
+.card .img-container {
+  position: relative;
+  width: 100%;
+  /* height: 27.6rem; */
+  height: 90%;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  border: 1px solid #0e9ad6;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container .copybtn {
+  position: absolute;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 30px #000000a8;
+  padding: 0.6rem 1.6rem;
+  font-size: var(--text-2xl);
+  font-family: var(--font-primary);
+  border-radius: 5px;
+  font-weight: 500;
+  color: var(--brand-primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  transform: scale(0.8);
+}
+.card .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.card:hover {
+  .card-img {
+    transform: scale(1.1);
+    filter: blur(4px);
+    z-index: -21;
+  }
+  cursor: pointer;
+}
+.card:hover .copybtn {
+  transition: all 0.4s;
+  transform: scale(1.1);
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.card-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  color: #666666;
+  font-weight: 500;
+}
+.detail-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price {
+  color: #49ab47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paid {
+  color: var(--brand-primary);
+}
+.paid img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+  border-radius: 6px;
+}
+.assect-icon {
+  width: 2.6rem;
+  height: 2.4rem;
+  margin: 0 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  padding: 0.1rem;
+}
+.time {
+  background: #e6eeff;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0057ff;
+  font-size: var(--text-xl);
+  font-weight: 400;
+}
+.time img {
+  width: 1.6rem;
+  height: 1.4rem;
+  margin-right: 0.4rem;
+  /* height: auto; */
+}
+@media (max-width: 429px) {
+  html{
+    font-size: 50%;
+  }
+}
